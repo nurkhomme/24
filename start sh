@@ -1,4 +1,3 @@
-
 start.sh
 
 #!/bin/bash
@@ -20,6 +19,7 @@ tmate -S /tmp/tmate.sock wait tmate-ready
 echo "SSH access:"
 tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}'
 echo "Web access (read-write):"
+
 tmate -S /tmp/tmate.sock display -p '#{tmate_web}'
 
 # Auto type to keep it alive
